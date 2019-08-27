@@ -37,5 +37,55 @@
       <li><a href="experiencia.htlm">Experiencia</a></li>
     </ul>
 
+    <table border=1>
+        <thead>
+          <th>AÑOS</th>
+          <th>INSTITUCION</th>
+          <th>LUGAR</th>
+          <th>¿CULMINO?</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1993</td>
+            <td>U. MENDOZA</td>
+            <td>PROV. MENDOZA</td>
+            <td>SI</td>
+          </tr>
+          <tr>
+            <td>1996</td>
+            <td>MICROCONTROLADORES</td>
+            <td>UTN</td>
+            <td>SI</td>
+          </tr>
+          <tr>
+            <td>2008</td>
+            <td>PROGRAMACION JAVA</td>
+            <td>UTN</td>
+            <td>SI</td>
+          </tr>
+        </tbody>
+      </table>
+      <form class="" action="index.html" method="post" name="estudios" >
+        <fieldset>
+           <legend>Agregar Estudios</legend>
+           <label for="anio"><strong> Año: </strong></label>
+           <select class="" name="anio">
+             <option value="2000">2000</option>
+             <option value="2005">2005</option>
+             <option value="2010">2010</option>
+             <option value="2015">2015</option>
+           </select>
+           <br>
+           <label for="institucion"><strong> Institucion: </strong></label>
+           <input type="text" name="institucion" placeholder="Ej: Universidad">
+           <br>
+           <label for="lugar"><strong> Lugar: </strong></label>
+           <input type="text" name="lugar" placeholder="Ej: Provincia de Mendoza" maxlength="80">
+           <br>
+           <p>
+             <input type="submit" value="Registrar">
+           </p>
+        </fieldset>
+      </form>
   </body>
 </html>
